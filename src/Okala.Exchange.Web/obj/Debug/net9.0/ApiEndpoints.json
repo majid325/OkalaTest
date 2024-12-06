@@ -1,0 +1,27 @@
+[
+  {
+    "ContainingType": "FastEndpoints.MainExtensions\u002B\u003C\u003Ec",
+    "Method": "\u003CMapFastEndpoints\u003Eb__2_1",
+    "RelativePath": "Coin/{symbol}/LatestQuote",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "GetLatestQuoteRequest",
+        "Type": "Okala.Exchange.Web.Coins.GetLatestQuoteRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Okala.Exchange.UseCases.CoinDTO",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "OkalaExchangeWebCoinsGetBySymbol"
+  }
+]
