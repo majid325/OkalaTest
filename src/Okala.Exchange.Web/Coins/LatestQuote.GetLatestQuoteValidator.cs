@@ -8,6 +8,6 @@ public class GetLatestQuoteValidator : Validator<GetLatestQuoteRequest>
 {
   public GetLatestQuoteValidator()
   {
-    RuleFor(x => x.Symbol).Length(0, 10);
+    //RuleFor(x => x.Symbol).Length(0, 10);
   }
 }

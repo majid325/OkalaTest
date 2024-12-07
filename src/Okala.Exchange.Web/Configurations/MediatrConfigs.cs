@@ -1,7 +1,7 @@
 ﻿using System.Reflection;
 using Ardalis.SharedKernel;
 using Okala.Exchange.Core.CoinAggregate;
-using Okala.Exchange.UseCases.Contributors.List;
+using Okala.Exchange.UseCases.Coins.LatestQuote;
 
 namespace Okala.Exchange.Web.Configurations;
 

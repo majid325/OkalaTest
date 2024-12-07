@@ -7,11 +7,11 @@ namespace Okala.Exchange.UseCases.Coins.LatestQuote;
 public class LatestQuoteHandler(ICryptocurrencyService _cryptocurrencyService, IRateService _rateService)
   : IQueryHandler<LatestQuoteQuery, Result<CoinDTO>>
 {
-  public async Task<Result<CoinDTO>> Handle(LatestQuoteQuery request, CancellationToken cancellationToken)
+  public async Task<Result<CoinDTO>> Handle(LatestQuoteQuery? request, CancellationToken cancellationToken)
   {
-    var coin = Coin.Create(request.Symbol??"BTC");
+    var coin = Coin.Create(request?.Symbol??"BTC");
 
-    var usdPrice = await _cryptocurrencyService.GetQuote(request.Symbol);
+    var usdPrice = await _cryptocurrencyService.GetQuote(coin.Symbol);
 
     coin.SetUSDPrice(usdPrice);
 

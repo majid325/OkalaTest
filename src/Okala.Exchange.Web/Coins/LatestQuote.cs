@@ -19,14 +19,15 @@ public class GetBySymbol(IMediator _mediator)
   {
     Get(GetLatestQuoteRequest.Route);
     AllowAnonymous();
+    
   }
 
-  public override async Task HandleAsync(GetLatestQuoteRequest request,
+  public override async Task HandleAsync(GetLatestQuoteRequest? request,
     CancellationToken cancellationToken)
   {
     try
     {
-      var query = new LatestQuoteQuery(request.Symbol);
+      var query = new LatestQuoteQuery(request?.Symbol);
 
       var result = await _mediator.Send(query, cancellationToken);
 
