@@ -1,5 +1,6 @@
 ﻿using Okala.Exchange.UseCases;
-using Okala.Exchange.UseCases.Contributors.List;
+using Okala.Exchange.UseCases.Coins.LatestQuote;
+
 
 namespace Okala.Exchange.Web.Coins;
 

@@ -2,7 +2,7 @@
 using Okala.Exchange.Core.ContributorAggregate;
 using Okala.Exchange.Core.Interfaces;
 
-namespace Okala.Exchange.UseCases.Contributors.List;
+namespace Okala.Exchange.UseCases.Coins.LatestQuote;
 
 public class LatestQuoteHandler(ICryptocurrencyService _cryptocurrencyService, IRateService _rateService)
   : IQueryHandler<LatestQuoteQuery, Result<CoinDTO>>

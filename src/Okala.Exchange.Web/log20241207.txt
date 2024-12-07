@@ -1,0 +1,42 @@
+2024-12-07 10:53:29.798 +03:30 [INF] Registered 1 endpoints in 1,772 milliseconds.
+2024-12-07 10:53:30.635 +03:30 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2024-12-07 10:53:30.804 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS "u")
+2024-12-07 10:53:31.142 +03:30 [INF] Now listening on: https://localhost:55362
+2024-12-07 10:53:31.145 +03:30 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2024-12-07 10:53:31.189 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-07 10:53:31.189 +03:30 [INF] Hosting environment: Development
+2024-12-07 10:53:31.190 +03:30 [INF] Content root path: C:\Users\mabdollahi\Source\Repos\OkalaTest\src\Okala.Exchange.Web
+2024-12-07 10:53:31.808 +03:30 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger - null null
+2024-12-07 10:53:31.827 +03:30 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger - 302 0 null 25.1937ms
+2024-12-07 10:53:31.832 +03:30 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.html - null null
+2024-12-07 10:53:31.855 +03:30 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 23.4354ms
+2024-12-07 10:53:31.863 +03:30 [INF] Request starting HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-07 10:53:31.870 +03:30 [INF] Request finished HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13788 application/javascript; charset=utf-8 7.7364ms
+2024-12-07 10:53:31.991 +03:30 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - null null
+2024-12-07 10:53:32.059 +03:30 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 67.4423ms
+2024-12-07 10:53:39.998 +03:30 [INF] Request starting HTTP/2 GET https://localhost:57679/Coin/btc/LatestQuote - null null
+2024-12-07 10:53:40.003 +03:30 [INF] Executing endpoint 'HTTP: GET /Coin/{symbol}/LatestQuote'
+2024-12-07 10:53:40.043 +03:30 [INF] Handling LatestQuoteQuery
+2024-12-07 10:53:40.044 +03:30 [INF] Property Symbol : btc
+2024-12-07 10:53:40.086 +03:30 [INF] Start processing HTTP request GET https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest?*
+2024-12-07 10:53:40.137 +03:30 [INF] Sending HTTP request GET https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest?*
+2024-12-07 10:53:41.355 +03:30 [INF] Received HTTP response headers after 1216.817ms - 200
+2024-12-07 10:53:41.363 +03:30 [INF] Execution attempt. Source: '-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1239.5401ms
+2024-12-07 10:53:41.367 +03:30 [INF] End processing HTTP request after 1282.9393ms - 200
+2024-12-07 10:53:41.369 +03:30 [INF] Start processing HTTP request GET https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest?*
+2024-12-07 10:53:41.369 +03:30 [INF] Sending HTTP request GET https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest?*
+2024-12-07 10:53:41.990 +03:30 [INF] Received HTTP response headers after 620.7756ms - 200
+2024-12-07 10:53:41.990 +03:30 [INF] Execution attempt. Source: '-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 621.1964ms
+2024-12-07 10:53:41.991 +03:30 [INF] End processing HTTP request after 621.4798ms - 200
+2024-12-07 10:53:42.009 +03:30 [INF] Start processing HTTP request GET https://api.exchangeratesapi.io/v1/latest?*
+2024-12-07 10:53:42.009 +03:30 [INF] Sending HTTP request GET https://api.exchangeratesapi.io/v1/latest?*
+2024-12-07 10:53:42.790 +03:30 [INF] Received HTTP response headers after 780.1898ms - 200
+2024-12-07 10:53:42.790 +03:30 [INF] Execution attempt. Source: '-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 780.9265ms
+2024-12-07 10:53:42.790 +03:30 [INF] End processing HTTP request after 781.2024ms - 200
+2024-12-07 10:53:42.804 +03:30 [INF] Handled LatestQuoteQuery with Ardalis.Result.Result`1[Okala.Exchange.UseCases.CoinDTO] in 2760 ms
+2024-12-07 10:53:42.810 +03:30 [INF] Executed endpoint 'HTTP: GET /Coin/{symbol}/LatestQuote'
+2024-12-07 10:53:42.811 +03:30 [INF] Request finished HTTP/2 GET https://localhost:57679/Coin/btc/LatestQuote - 200 null application/json; charset=utf-8 2812.8899ms
