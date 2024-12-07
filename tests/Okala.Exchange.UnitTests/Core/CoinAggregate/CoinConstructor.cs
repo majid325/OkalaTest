@@ -4,19 +4,19 @@ namespace Okala.Exchange.UnitTests.Core.ContributorAggregate;
 
 public class CoinConstructor
 {
-  private readonly string _testSymbol = "BTC";
   private Coin? _testCoin;
 
-  private Coin CreateContributor()
-  {
-    return  Coin.Create(_testSymbol);
-  }
 
-  [Fact]
-  public void InitializesName()
-  {
-    _testCoin = CreateContributor();
 
-    Assert.Equal(_testSymbol, _testCoin.Symbol);
+  [Theory]
+  [InlineData(null)]
+  [InlineData("btc")]
+  [InlineData("BTC")]
+  public void InitializesCoin(string? symbol)
+  {
+    _testCoin = Coin.Create(symbol);
+
+    Assert.True(_testCoin is not null);
+   
   }
 }

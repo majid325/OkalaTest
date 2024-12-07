@@ -9,7 +9,7 @@ public class LatestQuoteHandler(ICryptocurrencyService _cryptocurrencyService, I
 {
   public async Task<Result<CoinDTO>> Handle(LatestQuoteQuery? request, CancellationToken cancellationToken)
   {
-    var coin = Coin.Create(request?.Symbol??"BTC");
+    var coin = Coin.Create(request?.Symbol);
 
     var usdPrice = await _cryptocurrencyService.GetQuote(coin.Symbol);
 

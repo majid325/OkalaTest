@@ -344,3 +344,51 @@ SELECT EXISTS (
 2024-12-07 11:37:47.604 +03:30 [INF] Handled LatestQuoteQuery with Ardalis.Result.Result`1[Okala.Exchange.UseCases.CoinDTO] in 2048 ms
 2024-12-07 11:37:47.610 +03:30 [INF] Executed endpoint 'HTTP: GET /Coin/LatestQuote/'
 2024-12-07 11:37:47.612 +03:30 [INF] Request finished HTTP/2 GET https://localhost:57679/Coin/LatestQuote - 200 null application/json; charset=utf-8 5227.1841ms
+2024-12-07 11:40:25.603 +03:30 [INF] Registered 1 endpoints in 575 milliseconds.
+2024-12-07 11:40:26.128 +03:30 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2024-12-07 11:40:26.300 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS "u")
+2024-12-07 11:40:26.542 +03:30 [INF] Now listening on: https://localhost:58460
+2024-12-07 11:40:26.545 +03:30 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2024-12-07 11:40:26.595 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-07 11:40:26.595 +03:30 [INF] Hosting environment: Development
+2024-12-07 11:40:26.595 +03:30 [INF] Content root path: C:\Users\mabdollahi\Source\Repos\OkalaTest\src\Okala.Exchange.Web
+2024-12-07 11:40:26.854 +03:30 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger - null null
+2024-12-07 11:40:26.875 +03:30 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger - 302 0 null 27.8039ms
+2024-12-07 11:40:26.881 +03:30 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.html - null null
+2024-12-07 11:40:26.907 +03:30 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 26.5256ms
+2024-12-07 11:40:26.916 +03:30 [INF] Request starting HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-07 11:40:26.924 +03:30 [INF] Request finished HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13788 application/javascript; charset=utf-8 8.3799ms
+2024-12-07 11:40:27.042 +03:30 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - null null
+2024-12-07 11:40:27.057 +03:30 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 15.4274ms
+2024-12-07 11:40:32.692 +03:30 [INF] Request starting HTTP/2 GET https://localhost:57679/Coin/LatestQuote?symbol=dsfad - null null
+2024-12-07 11:40:32.699 +03:30 [INF] Executing endpoint 'HTTP: GET /Coin/LatestQuote/'
+2024-12-07 11:40:34.960 +03:30 [INF] Handling LatestQuoteQuery
+2024-12-07 11:40:34.960 +03:30 [INF] Property Symbol : dsfad
+2024-12-07 11:40:35.008 +03:30 [INF] Start processing HTTP request GET https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest?*
+2024-12-07 11:40:35.055 +03:30 [INF] Sending HTTP request GET https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest?*
+2024-12-07 11:40:35.878 +03:30 [INF] Received HTTP response headers after 821.8452ms - 200
+2024-12-07 11:40:35.886 +03:30 [INF] Execution attempt. Source: '-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 845.2769ms
+2024-12-07 11:40:35.891 +03:30 [INF] End processing HTTP request after 884.4918ms - 200
+2024-12-07 11:40:35.894 +03:30 [INF] Start processing HTTP request GET https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest?*
+2024-12-07 11:40:35.894 +03:30 [INF] Sending HTTP request GET https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest?*
+2024-12-07 11:40:36.440 +03:30 [INF] Received HTTP response headers after 544.995ms - 200
+2024-12-07 11:40:36.440 +03:30 [INF] Execution attempt. Source: '-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 545.5949ms
+2024-12-07 11:40:36.440 +03:30 [INF] End processing HTTP request after 546.0815ms - 200
+2024-12-07 11:40:36.713 +03:30 [INF] Executed endpoint 'HTTP: GET /Coin/LatestQuote/'
+2024-12-07 11:40:36.715 +03:30 [INF] Request finished HTTP/2 GET https://localhost:57679/Coin/LatestQuote?symbol=dsfad - 400 null application/problem+json; charset=utf-8 4023.5551ms
+2024-12-07 11:49:25.002 +03:30 [INF] Registered 1 endpoints in 492 milliseconds.
+2024-12-07 11:49:25.529 +03:30 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2024-12-07 11:49:25.705 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS "u")
+2024-12-07 11:49:25.951 +03:30 [INF] Now listening on: https://localhost:61207
+2024-12-07 11:49:25.954 +03:30 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2024-12-07 11:49:26.008 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-07 11:49:26.008 +03:30 [INF] Hosting environment: Development
+2024-12-07 11:49:26.008 +03:30 [INF] Content root path: C:\Users\mabdollahi\Source\Repos\OkalaTest\src\Okala.Exchange.Web

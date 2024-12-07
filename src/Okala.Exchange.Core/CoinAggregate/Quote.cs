@@ -8,15 +8,20 @@ public class Quote
 
   public Quote(Currency currency, decimal price)
   {
-
-    Guard.Against.Negative(price, nameof(price));
     Currency = currency;
     Price = price;
   }
+
+
+  public void SetPrice(decimal price)
+  { 
+    Price = price;
+  }
+
 
 #pragma warning disable CS8618 
   private Quote(){}
 #pragma warning restore CS8618 
 
-  public static Quote Create (Currency currency, decimal price)=>new Quote(currency, price);
+  internal static Quote Create (Currency currency, decimal price)=>new Quote(currency, price);
 }

@@ -21,5 +21,5 @@ public class CurrencyRate
 #pragma warning restore CS8618 
 
 
-  public static CurrencyRate Create(Currency currency, decimal rate)=>new CurrencyRate(currency,rate);
+  internal static CurrencyRate Create(Currency currency, decimal rate)=>new CurrencyRate(currency,rate);
 }

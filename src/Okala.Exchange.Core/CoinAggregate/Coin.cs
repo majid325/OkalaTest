@@ -12,23 +12,28 @@ public class Coin : EntityBase, IAggregateRoot
 #pragma warning disable CS8618
   private Coin() { }
 #pragma warning restore CS8618
-  private Coin(string symbol)
+  private Coin(string? symbol)
   {
-    Guard.Against.NullOrEmpty(symbol, nameof(symbol));
+    
     _quotes = new List<Quote>();
-    Symbol = symbol;
+    Symbol = symbol ?? "BTC";
   }
 
 
-  public static Coin Create(string symbol) => new Coin(symbol);
+  public static Coin Create(string? symbol) => new Coin(symbol);
 
 
   public void SetUSDPrice(decimal price)
   {
     Guard.Against.Negative(price, nameof(price));
 
-    _quotes.Add(Quote.Create(Currency.USD, price));
+    var exist = _quotes.FirstOrDefault(d => d.Currency == Currency.USD);
+    if (exist is null)
+      _quotes.Add(Quote.Create(Currency.USD, price));
+    else
+      exist.SetPrice(price);
   }
+
   public void SetQuotes(Currency from, List<CurrencyRate> currencyRates)
   {
     var usd = _quotes.FirstOrDefault(d => d.Currency == Currency.USD);
