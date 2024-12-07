@@ -28,12 +28,13 @@ Answer :  it's a good assessment with the cute technical challenges
 Question 6 ?
 Answer : 
 {
-    Name : "majid",
-    Location : "tehran",
-    CellPhone : 9125230028,
-    BirthDay : 1984,
-    Kind :"A regular person"
-    Favorites : ["Meusic","Mountaineering","Walking","Skii","Paraglider"]
+    "Name" : "majid",
+    "Location" : "tehran",
+    "CellPhone" : 9125230028,
+    "BirthDay" : 1984,
+    "Kind" :"A regular person"
+    "Favorites" : ["Meusic","Mountaineering","Walking","Skii","Paraglider"]
+    "LinkedinURL": "www.linkedin.com/in/majid-abdollahi"
 }
 
 ----------------------------------------------------------------------
