@@ -1,26 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Majid\\source\\repos\\test\\Okala.Exchange\\src\\Okala.Exchange.UseCases\\Okala.Exchange.UseCases.csproj": {}
+    "C:\\Users\\mabdollahi\\source\\repos\\OkalaTest\\src\\Okala.Exchange.UseCases\\Okala.Exchange.UseCases.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Majid\\source\\repos\\test\\Okala.Exchange\\src\\Okala.Exchange.Core\\Okala.Exchange.Core.csproj": {
+    "C:\\Users\\mabdollahi\\source\\repos\\OkalaTest\\src\\Okala.Exchange.Core\\Okala.Exchange.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Majid\\source\\repos\\test\\Okala.Exchange\\src\\Okala.Exchange.Core\\Okala.Exchange.Core.csproj",
+        "projectUniqueName": "C:\\Users\\mabdollahi\\source\\repos\\OkalaTest\\src\\Okala.Exchange.Core\\Okala.Exchange.Core.csproj",
         "projectName": "Okala.Exchange.Core",
-        "projectPath": "C:\\Users\\Majid\\source\\repos\\test\\Okala.Exchange\\src\\Okala.Exchange.Core\\Okala.Exchange.Core.csproj",
-        "packagesPath": "C:\\Users\\Majid\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Majid\\source\\repos\\test\\Okala.Exchange\\src\\Okala.Exchange.Core\\obj\\",
+        "projectPath": "C:\\Users\\mabdollahi\\source\\repos\\OkalaTest\\src\\Okala.Exchange.Core\\Okala.Exchange.Core.csproj",
+        "packagesPath": "E:\\nuget",
+        "outputPath": "C:\\Users\\mabdollahi\\Source\\Repos\\OkalaTest\\src\\Okala.Exchange.Core\\obj\\",
         "projectStyle": "PackageReference",
         "centralPackageVersionsManagementEnabled": true,
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Majid\\source\\repos\\test\\Okala.Exchange\\NuGet.Config",
-          "C:\\Users\\Majid\\source\\NuGet.Config",
-          "C:\\Users\\Majid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mabdollahi\\source\\repos\\OkalaTest\\NuGet.Config",
+          "C:\\Users\\mabdollahi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -28,6 +28,7 @@
           "net9.0"
         ],
         "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "c:\\LocalNuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -46,7 +47,7 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
+          "auditMode": "all"
         },
         "SdkAnalysisLevel": "9.0.100"
       },
@@ -156,27 +157,27 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Majid\\source\\repos\\test\\Okala.Exchange\\src\\Okala.Exchange.UseCases\\Okala.Exchange.UseCases.csproj": {
+    "C:\\Users\\mabdollahi\\source\\repos\\OkalaTest\\src\\Okala.Exchange.UseCases\\Okala.Exchange.UseCases.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Majid\\source\\repos\\test\\Okala.Exchange\\src\\Okala.Exchange.UseCases\\Okala.Exchange.UseCases.csproj",
+        "projectUniqueName": "C:\\Users\\mabdollahi\\source\\repos\\OkalaTest\\src\\Okala.Exchange.UseCases\\Okala.Exchange.UseCases.csproj",
         "projectName": "Okala.Exchange.UseCases",
-        "projectPath": "C:\\Users\\Majid\\source\\repos\\test\\Okala.Exchange\\src\\Okala.Exchange.UseCases\\Okala.Exchange.UseCases.csproj",
-        "packagesPath": "C:\\Users\\Majid\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Majid\\source\\repos\\test\\Okala.Exchange\\src\\Okala.Exchange.UseCases\\obj\\",
+        "projectPath": "C:\\Users\\mabdollahi\\source\\repos\\OkalaTest\\src\\Okala.Exchange.UseCases\\Okala.Exchange.UseCases.csproj",
+        "packagesPath": "E:\\nuget",
+        "outputPath": "C:\\Users\\mabdollahi\\source\\repos\\OkalaTest\\src\\Okala.Exchange.UseCases\\obj\\",
         "projectStyle": "PackageReference",
         "centralPackageVersionsManagementEnabled": true,
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Majid\\source\\repos\\test\\Okala.Exchange\\NuGet.Config",
-          "C:\\Users\\Majid\\source\\NuGet.Config",
-          "C:\\Users\\Majid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mabdollahi\\source\\repos\\OkalaTest\\NuGet.Config",
+          "C:\\Users\\mabdollahi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -184,6 +185,7 @@
           "net9.0"
         ],
         "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "c:\\LocalNuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -191,8 +193,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\Majid\\source\\repos\\test\\Okala.Exchange\\src\\Okala.Exchange.Core\\Okala.Exchange.Core.csproj": {
-                "projectPath": "C:\\Users\\Majid\\source\\repos\\test\\Okala.Exchange\\src\\Okala.Exchange.Core\\Okala.Exchange.Core.csproj"
+              "C:\\Users\\mabdollahi\\source\\repos\\OkalaTest\\src\\Okala.Exchange.Core\\Okala.Exchange.Core.csproj": {
+                "projectPath": "C:\\Users\\mabdollahi\\source\\repos\\OkalaTest\\src\\Okala.Exchange.Core\\Okala.Exchange.Core.csproj"
               }
             }
           }
@@ -206,7 +208,7 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
+          "auditMode": "all"
         },
         "SdkAnalysisLevel": "9.0.100"
       },
@@ -291,7 +293,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

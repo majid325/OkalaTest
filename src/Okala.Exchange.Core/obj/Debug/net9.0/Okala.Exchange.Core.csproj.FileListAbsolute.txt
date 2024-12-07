@@ -1,0 +1,13 @@
+C:\Users\mabdollahi\Source\Repos\OkalaTest\src\Okala.Exchange.Core\bin\Debug\net9.0\Okala.Exchange.Core.deps.json
+C:\Users\mabdollahi\Source\Repos\OkalaTest\src\Okala.Exchange.Core\bin\Debug\net9.0\Okala.Exchange.Core.dll
+C:\Users\mabdollahi\Source\Repos\OkalaTest\src\Okala.Exchange.Core\bin\Debug\net9.0\Okala.Exchange.Core.pdb
+C:\Users\mabdollahi\Source\Repos\OkalaTest\src\Okala.Exchange.Core\obj\Debug\net9.0\Okala.Exchange.Core.csproj.AssemblyReference.cache
+C:\Users\mabdollahi\Source\Repos\OkalaTest\src\Okala.Exchange.Core\obj\Debug\net9.0\Okala.Exchange.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mabdollahi\Source\Repos\OkalaTest\src\Okala.Exchange.Core\obj\Debug\net9.0\Okala.Exchange.Core.AssemblyInfoInputs.cache
+C:\Users\mabdollahi\Source\Repos\OkalaTest\src\Okala.Exchange.Core\obj\Debug\net9.0\Okala.Exchange.Core.AssemblyInfo.cs
+C:\Users\mabdollahi\Source\Repos\OkalaTest\src\Okala.Exchange.Core\obj\Debug\net9.0\Okala.Exchange.Core.csproj.CoreCompileInputs.cache
+C:\Users\mabdollahi\Source\Repos\OkalaTest\src\Okala.Exchange.Core\obj\Debug\net9.0\Okala.Exchange.Core.sourcelink.json
+C:\Users\mabdollahi\Source\Repos\OkalaTest\src\Okala.Exchange.Core\obj\Debug\net9.0\Okala.Exchange.Core.dll
+C:\Users\mabdollahi\Source\Repos\OkalaTest\src\Okala.Exchange.Core\obj\Debug\net9.0\refint\Okala.Exchange.Core.dll
+C:\Users\mabdollahi\Source\Repos\OkalaTest\src\Okala.Exchange.Core\obj\Debug\net9.0\Okala.Exchange.Core.pdb
+C:\Users\mabdollahi\Source\Repos\OkalaTest\src\Okala.Exchange.Core\obj\Debug\net9.0\ref\Okala.Exchange.Core.dll

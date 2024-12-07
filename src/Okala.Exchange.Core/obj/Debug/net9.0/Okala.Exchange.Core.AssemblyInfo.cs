@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Okala.Exchange.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+12aaaf249eb13a899eca0aa13ff31514289cda83")]
 [assembly: System.Reflection.AssemblyProductAttribute("Okala.Exchange.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Okala.Exchange.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
