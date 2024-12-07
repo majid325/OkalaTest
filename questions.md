@@ -1,5 +1,13 @@
 Question 1 ? 
 Answer : 6 hour
+ 
+If I have time, I can add the following features:
+
+Implement the Circuit Breaker pattern with polly.
+compelete test.
+add and config structured log.
+compelete login with jwt token.
+
 ----------------------------------------------------------------------
 Question 2 ? 
 Answer :
