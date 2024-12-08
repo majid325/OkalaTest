@@ -13,6 +13,7 @@
   <ItemGroup>
     <PackageReference Include="FluentAssertions" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="Moq" />
     <PackageReference Include="NSubstitute" />
     <PackageReference Include="xunit.runner.visualstudio">
       <PrivateAssets>all</PrivateAssets>
@@ -38,7 +39,14 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\Okala.Exchange.Core\Okala.Exchange.Core.csproj" />
+    <ProjectReference Include="..\..\src\Okala.Exchange.Infrastructure\Okala.Exchange.Infrastructure.csproj" />
     <ProjectReference Include="..\..\src\Okala.Exchange.UseCases\Okala.Exchange.UseCases.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.Extensions.Http">
+      <HintPath>E:\nuget\microsoft.extensions.http\9.0.0\lib\net9.0\Microsoft.Extensions.Http.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

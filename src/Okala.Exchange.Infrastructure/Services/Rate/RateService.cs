@@ -28,7 +28,7 @@ internal class RateService: IRateService
       List<CurrencyRate> rates = new List<CurrencyRate>();
       foreach (var rate in result.rates)
       {
-        Currency.TryFromName(rate.Key, out var currency);
+        Currency.TryFromName(rate.Key, out Currency currency);
         if (currency != null) {
           rates.Add(CurrencyRate.Create(currency, rate.Value));
         }

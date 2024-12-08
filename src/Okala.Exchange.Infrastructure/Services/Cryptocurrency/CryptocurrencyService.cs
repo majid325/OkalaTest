@@ -3,13 +3,16 @@ using System.Net.Http.Json;
 using Okala.Exchange.Core.Interfaces;
 
 namespace Okala.Exchange.Infrastructure.Services.Cryptocurrency;
-internal class CryptocurrencyService : ICryptocurrencyService
+public class CryptocurrencyService : ICryptocurrencyService
 {
   private readonly HttpClient _httpClient;
   private readonly string _GetQuotePath = "/v1/cryptocurrency/quotes/latest?symbol=";
-  public CryptocurrencyService(IHttpClientFactory httpClientFactory)
+  private readonly IConfiguration _config;
+  public CryptocurrencyService(IHttpClientFactory httpClientFactory, IConfiguration config)
   {
     _httpClient = httpClientFactory.CreateClient("coinmarketcap");
+    Guard.Against.NullOrEmpty(config["coinmarketcap:API-Key"], "coinmarketcap=>API-Key");
+    _config = config;
   }
 
 
@@ -20,14 +23,11 @@ internal class CryptocurrencyService : ICryptocurrencyService
     {
       //_httpClient.DefaultRequestHeaders.Add("X-CMC_PRO_API_KEY", "e78f515f-5b2d-4b67-9fd8-89ea61ac1c9f");
 
-      var httpRequestMessage = new HttpRequestMessage(
-            HttpMethod.Get,
-            $"{_GetQuotePath}{symbol}")
+      var httpRequestMessage = new HttpRequestMessage(HttpMethod.Get,$"{_GetQuotePath}{symbol}")
       {
-       Headers ={
-
-
-        { "X-CMC_PRO_API_KEY", "e78f515f-5b2d-4b67-9fd8-89ea61ac1c9f" },
+       Headers =
+        {
+          { "X-CMC_PRO_API_KEY", _config["coinmarketcap:API-Key"] },
         }
       };
     
