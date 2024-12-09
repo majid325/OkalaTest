@@ -1,6 +1,7 @@
 ﻿using System.Net.Http;
 using System.Net.Http.Json;
 using Okala.Exchange.Core.Interfaces;
+using Org.BouncyCastle.Utilities.Encoders;
 
 namespace Okala.Exchange.Infrastructure.Services.Cryptocurrency;
 public class CryptocurrencyService : ICryptocurrencyService
@@ -21,7 +22,6 @@ public class CryptocurrencyService : ICryptocurrencyService
 
     try
     {
-      //_httpClient.DefaultRequestHeaders.Add("X-CMC_PRO_API_KEY", "e78f515f-5b2d-4b67-9fd8-89ea61ac1c9f");
 
       var httpRequestMessage = new HttpRequestMessage(HttpMethod.Get,$"{_GetQuotePath}{symbol}")
       {
@@ -39,19 +39,28 @@ public class CryptocurrencyService : ICryptocurrencyService
       {
         return result.data.First().Value.quote.First().Value.price;
       }
+      else if (result is null)
+      {
+        throw new CryptocurrencyServiceException("داده دریافتی معتبر نمی باشد", new Exception("result of GetQuoteResponce is null"));
+      }
+      else
+      { 
+        throw new CryptocurrencyServiceException(result.status?.error_message?? "خطا در فراخوانی سرویس اکیچنج", new Exception("result of result.status?.error_message is null"));
+
+      }
 
     }
     catch (System.Net.Http.HttpRequestException hex)
     {
       if (hex.StatusCode == System.Net.HttpStatusCode.Unauthorized)
-        throw new Exception("توکن سرویس اکسچنج نامعتبر است");
-
+        throw new CryptocurrencyServiceException("توکن سرویس اکسچنج نامعتبر است", hex);
+      if (hex.StatusCode != System.Net.HttpStatusCode.OK)
+        throw new CryptocurrencyServiceException("خطا در فراخوانی سرویس اکیچنج", hex);
 
       throw;
 
     }
 
-    throw new Exception("خطا در ارسال درخواست به سرویس اکسچنج");
   }
 
   private record GetQuoteResponce(GetQuoteResponce_Status status, Dictionary<string, GetQuoteResponce_data> data);
@@ -59,9 +68,15 @@ public class CryptocurrencyService : ICryptocurrencyService
   private record GetQuoteResponce_data(int id, string name, string symbol, int credit_count, Dictionary<string, GetQuoteResponce_data_quote> quote);
   private record GetQuoteResponce_data_quote(decimal price, DateTime last_updated);
 
-
+  
 
 
 }
 
+
+public class CryptocurrencyServiceException : Exception
+{
+  public CryptocurrencyServiceException(string message,Exception innerException):base(message, innerException) { }
+  
+}
 

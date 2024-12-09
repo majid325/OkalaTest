@@ -19,6 +19,10 @@ public class LatestQuoteHandler(ICryptocurrencyService _cryptocurrencyService, I
 
     coin.SetQuotes(Currency.EUR, rates);
 
+
     return Result.Success(new CoinDTO(coin.Symbol,new Dictionary<string, decimal>( coin.Quotes.Select(q=>new KeyValuePair<string,decimal>(q.Currency.Name,q.Price)))));
   }
 }
+
+
+
