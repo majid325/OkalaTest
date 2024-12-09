@@ -37,7 +37,24 @@ public class CryptocurrencyService : ICryptocurrencyService
 
       if (result is not null && result.status.error_code == 0)
       {
-        return result.data.First().Value.quote.First().Value.price;
+        decimal price = 0;
+        try
+        {
+          price = result.data.First().Value.quote.First(d => d.Key == "USD").Value.price;
+          if (price == 0)
+          {
+            throw new CryptocurrencyServiceException("داده دریافتی معتبر نمی باشد",new Exception("price is  zero"));
+
+          }
+        }
+        catch (Exception ex)
+        {
+
+          throw new CryptocurrencyServiceException("داده دریافتی معتبر نمی باشد", ex);
+
+        }
+
+        return price;
       }
       else if (result is null)
       {
